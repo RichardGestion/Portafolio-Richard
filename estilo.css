@@ -502,3 +502,9 @@ body{
     }
 
 }
+
+@media (max-widht: 800px){
+    #central{
+        flex-direction: column;
+    }
+}
