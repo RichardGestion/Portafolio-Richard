@@ -15,6 +15,13 @@ body{
 /* ******** */
 /* H O M E */
 /* ******** */
+
+.contenedor {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0;
+    overflow: hidden;
+}
 .home{
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
         url(img/hero_bg.jpg);
@@ -402,15 +409,16 @@ body{
 /* RESPONSIVE*/
 /* ******** */
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:800px){
     .titulo-seccion{
         font-size: 8rem;
     }
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:700px){
     .titulo-seccion{
         font-size: 4rem;
     }
+    
     .home .contenido{
         left: 0;
         width: 100%;
@@ -503,8 +511,3 @@ body{
 
 }
 
-@media (max-widht: 800px){
-    #central{
-        flex-direction: column;
-    }
-}
