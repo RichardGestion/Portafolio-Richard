@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- HOME -->
+    <section id="home" class="home">
+        <header>
+            <a href="#" class="logo">
+                <span class="barra-logo">/</span>
+                <span class="texto">Portafolio</span>
+            </a>
+            <div class="menu" onclick="verMenu()">
+                <span>MENU</span>
+                <div class="barras">
+                    <div class="linea efecto"></div>
+                    <div class="linea"></div>
+                    <div class="linea efecto"></div>
+                </div>
+            </div>
+            <!-- Menu desplegable -->
+            <nav id="nav" class="nav-menu">
+                    <a href="#home" onclick="cerrar()">Inicio</a>
+                    <a href="#portfolio" onclick="cerrar()" >Portafolio</a>
+                    <a href="#sobremi" onclick="cerrar()">Sobre Mí</a>
+                    <a href="#habilidades" onclick="cerrar()">Habilidades</a>
+                    <a href="#testimonios" onclick="cerrar()">Testimonios</a>
+                    <a href="pdf.html" onclick="cerrar()">Curriculum</a>
+                   <button onclick="cerrar()"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+        </header>
+        <div class="contenido">
+            <h1>Richard<br>Suarez</h1>
+            <p class="descripcion">PROGRAMADOR<span class="color">/</span>EXPERTO EN SMS <span class="color">/</span>LIC. EN ADMINISTRACIÓN</p>
+
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>    
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="titulo-seccion headline load-hidden">OBJETIVOS</h2>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">CERTIFICAR SMS</h3>
+                    <p class="descripcion-proyecto">2024</p>
+                </div>
+                <img src="img/proyecto1.jpg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">RECERTIFICAR</h3>
+                    <p class="descripcion-proyecto">AOC</p>
+                </div>
+                <img src="img/proyecto2.jpg" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">OPTIMIZAR</h3>
+                    <p class="descripcion-proyecto">PROCESOS</p>
+                </div>
+                <img src="img/proyecto3.jpg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">DESARROLLAR E INTEGRAR</h3>
+                    <p class="descripcion-proyecto">HERRAMIENTAS TECNOLÓGICAS</p>
+                </div>
+                <img src="img/proyecto4.jpg" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">CULTURA ORGANIZACIONAL</h3>
+                    <p class="descripcion-proyecto">CONSOLIDAR</p>
+                </div>
+                <img src="img/proyecto5.jpg" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h3 class="titulo-proyecto">MEJORA CONTINUA</h3>
+                    <p class="descripcion-proyecto">INNOVAR</p>
+                </div>
+                <img src="img/proyecto6.jpg" alt="" class="img-proyecto">
+            </div>
+        </div>
+    </section>
+    
+    <!--  SOBRE MI -->
+    <section class="sobre-mi" id="sobremi">
+        <h2 class="titulo-seccion negro">Sobre Mí</h2>
+        <h2>Lic. Adm. Organización y Sistema<span class="linea"></span></h2>
+        <h4 class="descripcion">
+        <a href="#"><span class="efecto"> </span>Profesional</a>, 35 años, <a href="#"><span class="efecto"> </span>Soltero </a>, sin hijos con<a href="#"><span class="efecto"> </span> trece años de experiencia en la aviación comercial </a>.
+        </h4>
+        <br>
+    </section>
+
+     <!-- HABILIDADES -->
+     <section class="habilidades" id="habilidades">
+        <h2 class="titulo-seccion">Habilidades</h2>
+        <div class="fila">
+            <div class="menu">
+                <ul>
+                    <li id = "1" class="selected" onclick="mostrar(this)">Desarrollo Web</li>
+                    <li id = "2" onclick="mostrar(this)" class="">Desarrollo AppSheet</li>
+                    <li id = "3" onclick="mostrar(this)">Competencia en Excel</li>
+                    <li id = "4" onclick="mostrar(this)">Competencia en Python</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="detalle" id="info1">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-brands fa-css3"></i>
+                            <h4>Conocimiento en CSS (estilo)</h4>
+                       
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Conocimiento en HTML (estructura)</h4>
+        
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class=""></i>
+                            <h4></h4>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info2">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>App para Movil</h4>
+                           
+                        </div>
+                        <div class="col-detalle">
+                            <i class=""></i>
+                            <h4></h4>
+                    
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class=""></i>
+                            <h4></h4>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info3">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Conocimiento en Bisual Basic</h4>
+                            
+                        </div>
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-chart-mixed"></i>
+                            <h4></h4>
+                  
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class=""></i>
+                            <h4></h4>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info4">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h4>Desarrollo App de Escritorio</h4>
+                       
+                        </div>
+                        <div class="col-detalle">
+                            <i "></i>
+                            <h4></h4>
+                     
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <i class=""></i>
+                            <h4></h4>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios" id="testimonios">
+        <h2 class="titulo-seccion">Testimonios</h2>
+        <div class="division">
+            <div class="col col1">
+            </div>
+            <div class="col col2">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="titulo">
+               <h3>My <br> References <span class="linea"></span></h3>
+            </div>
+            <div class="cliente">
+                <div class="contenedor-img">
+                    <img src="img/cliente1.png" alt="" id="imgCliente">
+                </div>
+                <button class="siguiente" onclick="siguiente()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="opinion">
+                <h3 id="tituloCliente">Luis Avila. Gerente Hotel Marriotte Playa Grande!!!</h3>
+                <p id="txtCliente">Me complace recomendar a Richard Suarez para cualquier oportunidad que pueda estar disponible. He tenido el placer de conocerlo durante 8 años y puedo decir con confianza que es una persona con competencia, trabajadora y altamente calificada.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
